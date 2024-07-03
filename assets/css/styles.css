@@ -7,7 +7,6 @@
     }
     #juli-main{
         position: relative;
-        border: 1px solid red;
         width: 100%;
         height: 100%;
         min-height: auto;
@@ -43,7 +42,6 @@
     .juli-box-form{
         display: flex;
         justify-content: center;
-        border: 1px solid black;
         width: 479.99px;
         height: 412px;
         padding: 0px 15px;
@@ -87,17 +85,26 @@
         outline: none;
     }
     .juli-password-input-box{
+        position: relative;
         width: 349.99px;
         height: 50px;
         margin-bottom: 16px;
     }
+    .juli-password-input-box > i{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.9);
+    } 
     .juli-password-input-box > input{
         background-color: #FFFFFF14;
         border-radius: 40px;
         width: 100%;
         height: 100%;
         padding: 6px 20px;
-        font-family: "Lato", sans-serif;
+        font-family: "Lato", Arial, sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
@@ -109,7 +116,7 @@
     .juli-password-input-box > input:focus{
         outline: none;
         border: none;
-    }
+    } 
     .juli-sign-in-box-bttn{
         width: 349.99px;
         height: 50px;
@@ -120,17 +127,42 @@
         height: 100%;
         border-radius: 40px;
         border: none;
+        background-color: #FBCEB5;
     }
     .juli-remember-forgot-box{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 24px;
     }
     .juli-remember-box{
-        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
     }
     .juli-remember-box > label{
         display: flex;
+        align-items: center;
         gap: 10px;
+        color: #FBCEB5;
+        font-family: "Lato", Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+    }
+    .juli-remember-box > label > input{
+        width: 17.15px;
+        height: 36px;
+    }
+    .juli-forgot-box{
+        display: flex;
+        align-items: center;
+    }
+    .juli-forgot-box > a{
+        font-family: "Lato", Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #EEEEEF;
+        text-decoration: none;
     }
     .juli-osiw-text{
         display: flex;
